@@ -1,30 +1,37 @@
-# MoJo
-
-### A mood journaling application
-## Mood Journal --> mo~jo
+# MoJo: A mood journaling application
 
 
-
-# TERMINAL #
+# PROJECT SETUP
 
 ## INITIAL SETUP
-cd back-end
+cd MoJo/back-end
+
 npm install
 
-cd front-end
+cd MoJo/front-end
+
 npm install
 
-## DB SETUP
+### DB SETUP
 psql
+
 CREATE DATABASE mojo;
 
-## DB RESET
+### DB SEEDING
+
 cd MoJo/back-end
+
 npm run db:reset
 
-## DB POSTGRES (Queries)
-psql
-\c mojo
-\dt (view all tables)
+### START BACK-END SERVER
+cd MoJo/back-end
 
-# TERMINAL #
+npm run local
+
+### START FRONT-END SERVER
+cd MoJo/front-end
+
+npm start
+
+
+### Go to http://localhost:3000/ to view the application
